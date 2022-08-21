@@ -1,0 +1,10 @@
+<div class="navbar-nav">
+    {% if current_user.is_uthenticated %}
+    
+    {% else %}
+
+        <a class="nav-link nav-item navigation-links" href="{{
+            url_for('users.register)
+        }}">Register!</a>
+    {% endif %}
+</div>
